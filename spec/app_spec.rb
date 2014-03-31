@@ -10,5 +10,8 @@ feature "Products App" do
     expect(page).to have_content("Welcome")
 
     click_on "Add a Product"
+    fill_in 'product_name', with: 'product 1'
+    click_on "Create Product"
+    expect(page).to have_content("product 1")
   end
 end

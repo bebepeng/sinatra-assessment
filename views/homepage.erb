@@ -6,6 +6,10 @@
 <body>
 <h1>Welcome!</h1>
 <a href='/add'>Add a Product</a>
-
+<ul>
+  <% products.each do |product| %>
+  <li><%= product %></li>
+    <% end %>
+</ul>
 </body>
 </html>
